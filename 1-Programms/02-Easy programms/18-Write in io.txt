@@ -1,0 +1,4 @@
+f=open("KAran.txt","a")
+f.write("My name is karan sharma\n")
+f.write("Sharma hamesha bindaas hote hai\n")
+f.write("I love my country very much\n")

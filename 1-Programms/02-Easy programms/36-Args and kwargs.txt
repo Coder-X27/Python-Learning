@@ -1,0 +1,12 @@
+def funargs(normal, *args,**kwargs):
+    print(normal)
+    for items in args:
+        print(items)
+    print("\nNow i would like to introduce some of our heroes")
+    for key,value in kwargs.items():
+        print(f"{key} is a {value}")
+
+kar=["Karan","Kartik","Neel","Yash"]
+normal="Hi i am normal and the students are::"
+kw={"Karan":"Foodie","Kartik":"Big","Neel":"Small"}
+funargs(normal,*kar,**kw)

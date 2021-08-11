@@ -1,0 +1,6 @@
+mystr="JECRC Stands for Jaipur  Engineering College and reasearch Center"
+print(len(mystr))
+print(mystr[0:65:2])
+#Here [0:65:2]
+#           |2 means from where to skip words ?
+

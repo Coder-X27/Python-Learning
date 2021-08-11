@@ -1,0 +1,38 @@
+class Employee:
+    def __init__(self,fname,lname):
+        self.fname=fname
+        self.lname=lname
+        # self.email=f"{fname}.{lname}@jecrc.ac.in"
+    def explain(self):
+        return f"This employee is {self.fname} {self.lname}"
+    
+    @property
+    def email(self):
+        if self.fname==None or self.lname==None:
+            print("The email is not set yet. Set it using settler")
+            
+        return f"{self.fname}.{self.lname}@jecrc.ac.in"
+
+    @email.setter
+    def email(self,string):   
+        print("Settling now . . .")
+        names=string.split("@")[0]
+        self.fname=names.split(".")[0]
+        self.lname=names.split(".")[1]
+
+    @email.deleter
+    def email(self):
+        self.fname=None
+        self.lname=None
+
+skillf=Employee("Skill","F")
+print(skillf.email)
+
+#Method for object introspection
+print(id("This is a string"))#----->A special ide is given to a value when we sun a id function
+print(id("Karan sharma"))#----->A special ide is given to a value when we sun a id function
+#2nd Method
+o="This is a string"
+print(dir(o))#----->It will show all attributes that were present in a particular string.
+print(dir(skillf))#----->It will show all attributes that were present in a particular string.
+

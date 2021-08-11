@@ -1,0 +1,19 @@
+import requests
+import json
+
+def speak(str):
+    from win32com.client import Dispatch
+    speak = Dispatch("SAPI.SpVoice")
+    speak.speak(str)
+
+if __name__ == '__main__':
+    speak("News for today")
+    url = "http://newsapi.org/v2/everything?q=bitcoin&from=2020-11-29&sortBy=publishedAt&apiKey=1683095536524a658954f761329188b6"
+    news = requests.get(url).text
+    news_dict = json.loads(news)
+    print(news_dict["articles"])
+    arts = news_dict['articles']
+    for articles in arts:
+        speak(articles['title'])
+        speak("Moving on to next news ...Listen carefully")
+    speak("Thanks for listening....")

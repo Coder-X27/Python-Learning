@@ -1,0 +1,2 @@
+print("C:\python")
+print("Karan is a \nGood boy\n\t Roll No:AI32")

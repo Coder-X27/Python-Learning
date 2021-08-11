@@ -1,0 +1,7 @@
+import pickle
+
+cars =["Audi","BMW","Maruti Suzuki","Karan Tuzuki"]
+file = "mycar.pkl"
+fileobj=open(file,'wb')
+pickle.dump(cars, fileobj)
+fileobj.close()

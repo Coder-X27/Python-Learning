@@ -1,0 +1,3 @@
+with open("test.txt") as f:
+    a=f.readlines()
+    print(a)

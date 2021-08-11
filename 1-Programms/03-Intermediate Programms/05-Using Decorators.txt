@@ -1,0 +1,29 @@
+#When we dont use decorators --->
+def dec1(func1):
+    def nowexec():
+        print("Executing now !")
+        func1()
+        print("Executed !")
+    return nowexec
+
+def who_is_karan():
+    print("Karan is a good boy")
+
+who_is_karan=dec1(who_is_karan)
+
+who_is_karan()
+
+#When we use decorators----->
+
+def dec1(func1):
+    def nowexec():
+        print("Executing now !")
+        func1()
+        print("Executed !")
+    return nowexec
+
+@dec1
+def who_is_karan():
+    print("Karan is a good boy")
+
+who_is_karan()

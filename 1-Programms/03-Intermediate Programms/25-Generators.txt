@@ -1,0 +1,32 @@
+#Iterable - __iter__() or __getitem__()
+#Iterator - __next__()
+#Iteration - 
+
+# #First method------->
+# def gen(n):
+#     for i in range(n):
+#         yield i#------->Generator
+
+# g=gen(5)
+# print(g.__next__())
+# print(g.__next__())
+# print(g.__next__())
+
+
+# #Second method---->
+# def gen(n):
+#     for i in range(n):
+#         yield i#------->Generator
+
+# g=gen(5)
+
+# for i in g:
+#     print(i)
+
+## Third Method------>
+
+# h="Karan"
+# ier=iter(h)
+# print(ier.__next__())
+# print(ier.__next__())
+# print(ier.__next__())

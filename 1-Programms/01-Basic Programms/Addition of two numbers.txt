@@ -1,0 +1,3 @@
+var1="32"
+var2="20"
+print(int(var1)+int(var2))s

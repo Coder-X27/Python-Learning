@@ -1,0 +1,11 @@
+# 1st Method
+
+# lis=["john","cena","Randy","orton","Khali","Jinder","Mahal"]
+# for item in lis:
+#     print(item,"and",end=" ")
+
+# Alternative Method
+
+lis=["john","cena","Randy","orton","Khali","Jinder","Mahal"]
+a=" and ".join(lis)#join function is used for joining items in list
+print(a,"Other WWE superstars")

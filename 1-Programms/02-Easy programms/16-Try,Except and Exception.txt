@@ -1,0 +1,10 @@
+print("Enter num 1")
+num1=input()
+print("Enter num 2")
+num2=input()
+try:
+    print("The sum of these two numbers is",int(num1)+int(num2))
+except Exception as e:
+    print(e)
+#This programme will only work when you enter anything inspite of a integer
+print("This is a very important line")

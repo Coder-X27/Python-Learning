@@ -1,0 +1,6 @@
+f=open("test.txt")
+print(f.readline())
+f.seek(6)#------->It will print the character position that you have 
+print(f.tell())
+print(f.readline())
+print(f.readline())

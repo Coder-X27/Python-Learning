@@ -1,0 +1,6 @@
+d1= []          # This indicates the type...(List)
+print(type(d1))
+d1= {}          # This indicates the type...(Dictionary)
+print(type(d1))
+d1= ()          # This indicates the type...(Blank tuple)
+print(type(d1))

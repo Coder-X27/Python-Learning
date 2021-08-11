@@ -1,0 +1,12 @@
+x=89
+def karan():
+    x=20
+    def rohan():
+        global x
+        x=88
+    
+    rohan()
+    print("After callling rohan()",x)
+ 
+karan()
+print(x)

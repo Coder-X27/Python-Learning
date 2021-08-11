@@ -1,0 +1,3 @@
+mystr="JECRC Stands for Jaipur  Engineering College and reasearch Center"
+print(len(mystr))
+print(mystr[::-1])

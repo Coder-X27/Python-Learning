@@ -1,0 +1,3 @@
+import pygame as game
+
+print(game.__version__)

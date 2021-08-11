@@ -1,0 +1,17 @@
+# # Method no 1--->For loop with else Working.....
+
+# khana=["Zomoto","Swiggy","Roti","Sabji"]
+
+# for items in khana:
+#     print(items)
+# else:
+#     print("The for loop has ended properly")
+
+# # Method no 2---> For loop by using if and else And break statement
+# khana = ["Zomoto", "Swiggy", "Roti", "Sabji"]
+# for items in khana:
+#     if items == "Roti":
+#         print(items)
+#         break
+# else:
+#     print("The for loop has ended properly")c

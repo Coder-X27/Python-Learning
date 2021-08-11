@@ -1,0 +1,84 @@
+import datetime
+def gettime():
+    return datetime.datetime.now()
+def take(k):
+    if k==1:
+        c=int(input("Enter 1 for excersise and 2 for food"))
+        if(c==1):
+            value=input("Type here\n")
+            with open("Karan-ex.txt","a") as op:
+                op.write(str([str(gettime())])+": "+value+"\n")
+            print("Successfully written")
+        elif(c==2):
+            value = input("Type here\n")
+            with open("Karan-food.txt", "a") as op:
+                op.write(str([str(gettime())]) + ": " + value + "\n")
+            print("Successfully written")
+    elif(k==2):
+        c = int(input("Enter 1 for excersise and 2 for food"))
+        if (c == 1):
+            value = input("Type here\n")
+            with open("Kartik-ex.txt", "a") as op:
+                op.write(str([str(gettime())]) + ": " + value + "\n")
+            print("Successfully written")
+        elif (c == 2):
+            value = input("Type here\n")
+            with open("Kartik-food.txt", "a") as op:
+                op.write(str([str(gettime())]) + ": " + value + "\n")
+            print("Successfully written")
+    elif(k==3):
+        c = int(input("Enter 1 for excersise and 2 for food"))
+        if (c == 1):
+            value = input("Type here\n")
+            with open("Neel-ex.txt", "a") as op:
+                op.write(str([str(gettime())]) + ": " + value + "\n")
+            print("Successfully written")
+        elif (c == 2):
+            value = input("Type here\n")
+            with open("Neel-food.txt", "a") as op:
+                op.write(str([str(gettime())]) + ": " + value + "\n")
+            print("Successfully written")
+    else:
+        print("Plz enter valid input (1(Karan),2(Kartik),3(Neel)")
+def retrieve(k):
+    if k==1:
+        c=int(input("Enter 1 for excersise and 2 for food"))
+        if(c==1):
+            with open("Karan-ex.txt") as op:
+                for i in op:
+                    print(i,end="")
+        elif(c==2):
+            with open("Karan-food.txt") as op:
+                for i in op:
+                    print(i, end="")
+    elif(k==2):
+        c = int(input("Enter 1 for excersise and 2 for food"))
+        if (c == 1):
+            with open("Kartik-ex.txt") as op:
+                for i in op:
+                    print(i, end="")
+        elif (c == 2):
+            with open("Kartik-food.txt") as op:
+                for i in op:
+                    print(i, end="")
+    elif(k==3):
+        c = int(input("Enter 1 for excersise and 2 for food"))
+        if (c == 1):
+            with open("Neel-ex.txt") as op:
+                for i in op:
+                    print(i, end="")
+        elif (c == 2):
+            with open("Neel-food.txt") as op:
+                for i in op:
+                    print(i, end="")
+    else:
+        print("Plz enter valid input (Karan,Kartik,Neel)")
+print("Health management system: ")
+a=int(input("Press 1 for lock the value and 2 for retrieve "))
+
+if a==1:
+    b = int(input("Press 1 for Karan 2 for Kartik 3 for Neel "))
+    take(b)
+else:
+    b = int(input("Press 1 for Karan 2 for Kartik 3 for Neel "))
+    retrieve(b)

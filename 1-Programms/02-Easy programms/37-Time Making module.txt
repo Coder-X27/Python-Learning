@@ -1,0 +1,7 @@
+import time
+
+localtime=time.asctime(time.localtime(time.time()))
+print(localtime)
+#here asctime is important to print the time
+# time.localtime prints The details that were in years 
+# Like this---->time.struct_time(tm_year=2020, tm_mon=12, tm_mday=25, tm_hour=9, tm_min=28, tm_sec=17, tm_wday=4, tm_yday=360, tm_isdst=0)

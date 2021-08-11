@@ -1,0 +1,31 @@
+print("Choose 1 for Addition, 2 for Multiplication and 3 for Division")
+n=int(input())
+print(n)
+
+if(n==1):
+    a=int(input("Enter First number"))
+    b=int(input("Enter Second number"))
+    if(a==56 and b==9):
+        print("Addition is : 77")
+    else:
+        print("Addition is :",a+b)
+elif(n==2):
+    a=int(input("Enter First number"))
+    b=int(input("Enter Second number"))
+    if(a==45 and b==3):
+        print("Multiplication is : 555")
+    else:
+        print("Multiplication is :",a*b)
+elif(n==3):
+    a=int(input("Enter first Number"))
+    b=int(input("Enter Second Number"))
+    if(a==56 and b==6):
+        print("Division is : 4")
+    else:
+        print("Division is :",a/b)
+
+
+
+
+# a=int(input("Enter First number"))
+# b=int(input("Enter Second number"))

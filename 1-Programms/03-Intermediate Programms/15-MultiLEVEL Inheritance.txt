@@ -1,0 +1,21 @@
+class Dad:
+    basketball=1
+
+class Son(Dad):
+    dance=1
+    basketball=9
+    def isdance(self):
+        return f"Yes i can dance {self.dance} no of times"
+
+class Grandson(Son):
+    dance=7
+    guitar=1
+
+    def isdance(self):
+        return f"Jackson yeah ! Yes i dance very awesome {self.dance} no of times"
+
+daran=Dad()
+laran=Son()
+karan=Grandson()
+
+print(karan.dance)

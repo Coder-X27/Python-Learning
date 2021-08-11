@@ -1,0 +1,47 @@
+# 1st Method ----->Using normal for loop
+
+# numbers=["3","4","5"]
+ 
+# for i in range(len(numbers)):
+#     numbers[i] = int(numbers[i])
+
+# numbers[2]=numbers[2]+1
+# print(numbers[2])
+
+# 2nd method----->By using MAP function(Kya banana hai , Kisko banana hai)
+
+# numbers=["3","34","64"]
+# numbers=list(map(int,numbers))
+
+# numbers[2]=numbers[2]+1
+# print(numbers[2])
+
+#3rd Method--->By Map function and squaring the value
+
+# def sq(a):
+#     return a*a
+
+# num=[2,3,5,6,76,3,3,2]
+# square=list(map(sq,num))
+# print(square)
+
+
+#4th Method----->Same as 3rd but Printing As LAMBDA
+
+# num=[2,3,5,6,76,3,3,2]
+# square=list(map(lambda x:x*x,num))
+# print(square)
+
+
+#5th Method----->Using square and cube combine for List and map function
+
+# def square(a):
+#     return a*a
+
+# def cube(a):
+#     return a*a*a
+
+# func=[square,cube]
+# for i in range(5):
+#     val=list(map(lambda x:x(i),func))
+#     print(val)

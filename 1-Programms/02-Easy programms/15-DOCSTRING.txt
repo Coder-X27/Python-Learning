@@ -1,0 +1,6 @@
+def function1():
+    """This is a Function tha will not work for 3 numbers
+    This number does not work for 3 numbers"""
+
+sum1=function1()
+print(function1.__doc__)

@@ -1,0 +1,6 @@
+list1=[["Karan",5],["Kartik",250],["Neel",1],["Mummy",10]]
+
+dict1=dict(list1)
+
+for item in dict1:
+    print(item)

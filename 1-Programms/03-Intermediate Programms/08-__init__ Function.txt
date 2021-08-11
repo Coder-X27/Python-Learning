@@ -1,0 +1,14 @@
+class Employee:
+    leaves=8
+    def __init__(self,aname,asalary,arole):
+        self.name=aname
+        self.salary=asalary
+        self.role=arole
+
+
+    def printdetails(self):
+        return f"The name is {self.name}. Salary is {self.salary} and role is {self.role}"
+
+
+karan=Employee("Karan",45000,"Coder")
+print(karan.salary)

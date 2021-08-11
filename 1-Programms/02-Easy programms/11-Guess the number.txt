@@ -1,0 +1,14 @@
+hidNum=54
+print("This is a Guess The number game\n")
+
+while(True):
+    guess=int(input("Enter a number\n"))
+    if(guess==hidNum):
+        print("Congratulations You have guessed a Right number")
+        break
+    elif(guess<hidNum):
+        print("Enter a Greater number")
+    else:
+        print("Enter a smaller number")
+
+print("Thank you For using this Programme")

@@ -1,0 +1,15 @@
+##Normal Method----->
+# list1=[1,2,3,4]
+# num=0
+# for i in list1:
+#     num=num+i
+# print(num)
+
+##Alternative Method--->Using lambda and reduce function
+
+##Reduce funtion can be obtained from FUNCTOOL 
+# from functools import reduce
+# list1=[1,2,3,4,5]
+# num=reduce(lambda x,y:x+y,list1)##reduce(Jo karna chahte ho,Jispar karna chahte ho)
+# print(num)
+s

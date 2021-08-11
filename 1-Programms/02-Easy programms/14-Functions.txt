@@ -1,0 +1,8 @@
+def function1(a,b):
+    sum=a+b
+    return sum
+
+n=int(input("Enter the value of a\n"))
+m=int(input("Enter the value of b\n"))
+sum1=function1(n,m)
+print("The sum is",sum1)

@@ -1,0 +1,23 @@
+# # Method 1---->Zero division Method
+#  
+# a=input("What is your name")
+# b=input("How much do you earn")
+# if int(b)==0:
+#     raise ZeroDivisionError("b is 0 so stopping the Programme")
+
+# if a.isnumeric():
+#     raise Exception("Numbers are not allowed")
+
+# print(f"Hello {a}")
+
+# # Method 2---->Value Error
+
+# c=input("Enter your name")
+# try:
+#     print(a)
+
+# except Exception as e:
+#     if c == "karan":
+#         raise ValueError("Karan is blocked He is not allowed")
+
+#     print("Exeption Handled")

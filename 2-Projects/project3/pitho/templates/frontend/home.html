@@ -1,0 +1,13 @@
+{% extends "frontend/layout.html" %}
+{% block title %}
+	Home Page
+{% endblock %}
+{% block body %}
+<form action = "{{ url_for('login_submit')}}" method = "post">
+	<label> Username</label>
+	<input type = "text" name = "email">
+	<label> Password</label>
+	<input type = "password" name = "password">
+	<button type = "submit"> Login </button>
+</form>
+{% endblock %}

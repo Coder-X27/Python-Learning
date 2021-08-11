@@ -1,0 +1,17 @@
+import json#------>Json is java scipt notation 
+
+data = '{"var1":"karan","var2":56}'
+print(data)
+
+parsed= json.loads(data)
+print(type(parsed))
+
+data2 ={
+    "channel_name":"codewithharry",
+    "cars":['bmw','ferrari','Lamborghini'],
+    "isbad":False,
+    "fridge":('roti',450)
+}
+
+jscomp=json.dumps(data2)#----->json.dumps convert pyton script to java/json script
+print(jscomp)

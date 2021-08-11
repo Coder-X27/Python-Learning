@@ -1,0 +1,7 @@
+ks="Artificial Intelligence and Data Science"
+print(ks.endswith("Science"))     #It searches whether a number endswith the particular value which is given or not ......If yes then It will return True if not then it will return False
+print(ks.count("l"))              #It counts the number of letters present in a particular statement;  
+print(ks.capitalize())            #It capitalize the First letter of the string 
+print(ks.upper())                 #It converts all the letters of the string into Upper case  
+print(ks.lower())                 #It converts all the letters of the string into Lower case
+print(ks.replace("and","yo"))     #It replaces the word that entered first to the word that entered 2ndly.

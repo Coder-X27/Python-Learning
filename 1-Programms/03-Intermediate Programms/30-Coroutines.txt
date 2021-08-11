@@ -1,0 +1,17 @@
+def searcher():
+    import time
+    book="This is a book in harry"
+    time.sleep(3)
+
+    while(True):
+        text=yield
+        if text in book :
+            print("Your text is in the book")
+        else:
+            print("Text is not in the book")
+
+search=searcher()
+print("Search Started")
+next(search)
+print("Next Method run")
+search.send("Harry")

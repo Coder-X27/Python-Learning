@@ -1,0 +1,28 @@
+class Employee:
+    leaves = 8
+
+    def __init__(self, aname, asalary, arole):
+        self.name = aname
+        self.salary = asalary
+        self.role = arole
+
+    def printdetails(self):
+        return f"The name is {self.name}. Salary is {self.salary} and role is {self.role}"
+
+    @classmethod
+    def change_leaves(cls, newleaves):
+        cls.no_of_leaves = newleaves
+
+    def __add__(self, other):  # ----->This is known as dunder adding method
+        # It helps us doing operator overloading
+        return self.salary + other.salary
+
+    def __truediv__(self, other):  # ----->This is known as dunder Division method
+        # It helps us doing operator overloading
+        return self.salary / other.salary
+
+
+emp1 = Employee("Karan", 4500, "Programmer")
+emp2 = Employee("Neel", 45, "Coder")
+print(emp1+emp2)
+print(emp1/emp2)

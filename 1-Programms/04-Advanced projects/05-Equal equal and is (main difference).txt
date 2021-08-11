@@ -1,0 +1,8 @@
+#### Run this in python terminal ####
+ 
+
+==  -  Valur equality  -  Two objects have the same Value
+is  -  Reference equality  -  Two references refer to the same object
+
+
+

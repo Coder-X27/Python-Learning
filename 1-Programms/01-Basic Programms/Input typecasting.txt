@@ -1,0 +1,3 @@
+print("Enter your number")
+num=input()
+print("The number after addition is ",int(num)+20)

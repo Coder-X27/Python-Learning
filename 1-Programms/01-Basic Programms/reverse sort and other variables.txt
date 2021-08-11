@@ -1,0 +1,13 @@
+
+numbers=[2,7,5,6,1,9,8,3,4]
+# numbers.remove(7)---->It removes the number of a particular position
+# numbers.pop()------->It removes the last digit of a list
+# numbers.sort()-------->It arranges the list in ascending order 
+# numbers.reverse()-------->It arranges the list in descending order
+# numbers.append(1)------->It increases the size of the llist by adding a particular value
+# numbers.append(72)------->It increases the size of the llist by adding a particular value
+# numbers.append(5)------->It increases the size of the llist by adding a particular value
+# numbers.insert(2,67)
+tup=(1,2,3,4)
+print(tup)
+# print(numbers)

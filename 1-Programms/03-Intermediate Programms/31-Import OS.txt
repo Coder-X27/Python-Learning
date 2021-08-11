@@ -1,0 +1,34 @@
+import os
+
+#1St Concept ---->
+
+# print(os.getcwd())#----->Current working Directory
+# os.chdir("C://")
+# print(os.getcwd())#----->Directory Changed to (C://)    
+
+#2nd Concept---->
+
+# print(os.listdir("C://"))#--->This willl make a list of items that are present in a particiular area
+
+# os.mkdir("Tester")#This will make a folder in a particular path with there name
+
+# os.makedirs("This/that")#----->This will make a folder this in which that folder also exist
+# #makedirs are also used to make sub directories
+            # os.rename("karan.txt","Karanshx.txt")#----->This will rename the file which exist...
+
+# print(os.environ.get('path'))#----->It will get the path which is running currently.
+# print(os.path.join("C://","/karanshx.txt"))#It will remove all the extra slashes that are involved in the path you entered
+
+# print(os.path.exists("C://Program Files"))#This will return True if the path entered has already exist..
+# print(os.path.exists("C://Karan"))#This will return False if the path entered does not exist..
+
+# print(os.path.isfile("C://Program Files"))#It will return false if the type of the thing is directory or any thing inspite of File.
+
+
+
+
+
+
+
+
+

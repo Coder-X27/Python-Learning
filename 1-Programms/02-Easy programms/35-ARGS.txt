@@ -1,0 +1,8 @@
+def funargs(normal, *args):
+    print(normal)
+    for items in args:
+        print(items)
+
+kar=["Karan","Kartik","Neel","Yash"]
+normal="Hi i am normal and the students are::"
+funargs(normal,*kar)

@@ -1,0 +1,3 @@
+print("C:\python")
+print("C:\nylon")
+print("C:\\nylon")

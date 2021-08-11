@@ -1,0 +1,19 @@
+import time
+from functools import lru_cache#It will save the memory allocation for a particular amount of time
+
+@lru_cache(maxsize=3)#If The size is more than the particular value than this will take the latest arguments .
+#in this particular case the function will take the last 3 calls 
+def some_work(n):
+    time.sleep(n)
+    return n
+
+if __name__ == '__main__':
+    print("Now running some work")
+    some_work(3)#These functions will not execute 
+    some_work(6) 
+    some_work(7)
+    some_work(8)
+    print("DONE....Calling Again")
+    input()
+    some_work(3)#--->This will not take any time because the above one is saved already
+    print("Called Again ")

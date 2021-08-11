@@ -1,0 +1,18 @@
+class Employee:
+    leaves=8
+
+    def printdetails(self):
+        return f"The name is {self.name}. Salary is {self.salary} and role is {self.role}"
+
+karan =Employee()
+kartik=Employee()
+
+karan.name="Karan"
+karan.salary=45000
+karan.role="Coder"
+
+kartik.name="Kartik"
+kartik.salary=54000
+kartik.role="Enterpreneur"
+
+print(kartik.printdetails())

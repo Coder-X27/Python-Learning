@@ -1,0 +1,35 @@
+# #method 1
+
+# f1=open("test.txt")
+
+# try:
+#     open("Karan.txt")
+
+# except Exception as e:
+#     print(e)
+
+# finally:
+#     print("Run this anyway ...")
+#     f1.close()
+
+# print ("Karan sharma") 
+
+#Method 2
+
+
+f1=open("test.txt")
+
+try:
+    open("Karan.txt")
+
+except Exception as e:##Either execpt or else will run 
+    print(e)
+
+else:
+    print("Else executed ! ")##Either execpt or else will run 
+
+finally:## It will run definately It is used to close all files and programms
+    print("Run this anyway ...")
+    f1.close()
+
+print ("Karan sharma") 

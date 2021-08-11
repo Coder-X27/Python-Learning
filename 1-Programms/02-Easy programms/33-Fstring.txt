@@ -1,0 +1,4 @@
+me ="Karan"
+a1=45
+a=f"This is {me} {a1}"
+print(a)

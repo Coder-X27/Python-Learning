@@ -1,0 +1,6 @@
+d1={"Karan":"Burger","Kartik":"Chicken","Neel":"Pizza","Manish":{"B":"2 Eggs","L":"Mutton","D":"Chicken"}}
+del d1 ["Manish"]
+d1.update({"Leena":"Matha"})
+print(d1)
+print(d1.keys())
+print(d1.items())

@@ -1,0 +1,5 @@
+items=[int,float,"karan",5,6,6,4,2,44,88,9,88,54,65]
+
+for item in items:
+    if str(item).isnumeric() and item>=6:
+        print (item)

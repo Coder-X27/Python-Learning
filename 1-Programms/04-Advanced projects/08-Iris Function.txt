@@ -1,0 +1,19 @@
+## This is the method which is used to make a iris file to run it in the terminal you have to go for 2nd method
+
+# import requests
+# import pickle
+
+# data = requests.get("https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data").text
+# l1=data.split("\n")
+# l2=[item.split(",") for item in l1 if len(item)!=0]
+# print(l2)
+
+# with open ("myiris.pkl","wb") as f:
+#     pickle.dump(l2,f)
+
+
+## Method 2 ---->To open a created iris
+
+# import pickle
+# with open("myiris.pkl","rb") as f:
+#     print(pickle.load(f))

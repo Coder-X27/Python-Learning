@@ -1,0 +1,50 @@
+class Employee:
+    leaves = 8
+    var=8
+
+    def __init__(self, aname, asalary, arole):
+        self.name = aname
+        self.salary = asalary
+        self.role = arole
+
+    def printdetails(self):
+        return f"The name is {self.name}. Salary is {self.salary} and role is {self.role}"
+
+    @classmethod
+    def change_leaves(cls, newleaves):
+        cls.no_of_leaves = newleaves
+
+    @classmethod
+    def from_str(cls, string):
+        params = string.split("-")
+        return cls(*string.split("-"))
+
+    @staticmethod
+    def printgood(string):
+        print("This is good " + string)
+
+
+class player:
+    no_of_games=4
+    var=9
+    def __init__(self):
+        self.name=name
+        self.game=game
+
+    def printdetails(self):
+        return f"The name is {self.name}. Salary is {self.game}"
+
+
+class cool_programmer(Employee,player):
+    var=10
+    language="C++"
+    def printlanguage(self):
+        print(self.language)
+
+kartik=Employee("Kartik", 450, "BuissnessMan")
+karan=cool_programmer("Karan",7000,"Cool Programmer")
+
+# det=karan.printdetails()
+# karan.printlanguage()
+# print(det)
+print(karan.var)#-------->It will print the var that contains multiple inheritance . If there is not any inheritance or we can that it contains single heritance then it will print the value of 1st class

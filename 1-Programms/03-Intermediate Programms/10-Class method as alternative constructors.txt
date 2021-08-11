@@ -1,0 +1,58 @@
+class Employee:
+    leaves=8
+    def __init__(self,aname,asalary,arole):
+        self.name=aname
+        self.salary=asalary
+        self.role=arole
+
+
+    def printdetails(self):
+        return f"The name is {self.name}. Salary is {self.salary} and role is {self.role}"
+
+
+    @classmethod
+    def change_leaves(cls,newleaves):
+        cls.no_of_leaves=newleaves
+
+    @classmethod
+    def from_str(cls,string):
+        params=string.split("-")
+        return cls(params[0],params[1],params[2])
+
+
+
+karan=Employee.from_str("Karan-480-student")
+
+print(karan.salary)
+
+
+-----------------------------><----------------------------------------------
+#one liner function
+
+
+class Employee:
+    leaves=8
+    def __init__(self,aname,asalary,arole):
+        self.name=aname
+        self.salary=asalary
+        self.role=arole
+
+
+    def printdetails(self):
+        return f"The name is {self.name}. Salary is {self.salary} and role is {self.role}"
+
+
+    @classmethod
+    def change_leaves(cls,newleaves):
+        cls.no_of_leaves=newleaves
+
+    @classmethod
+    def from_str(cls,string):
+        params=string.split("-")
+        return cls(*string.split("-"))
+
+
+
+karan=Employee.from_str("Karan-480-student")
+
+print(karan.salary)

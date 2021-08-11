@@ -1,0 +1,8 @@
+while(True):
+    inp=int(input("Enter a number\n"))
+    if inp>100:
+        print("Congratulations you have entered a number wihch is greater than 100")
+        break
+    else:
+        print("Try Again")
+        continue;

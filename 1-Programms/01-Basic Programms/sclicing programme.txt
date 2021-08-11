@@ -1,0 +1,3 @@
+mystr="My name is karan sharma"
+print(len(mystr))
+print(mystr[0:7])

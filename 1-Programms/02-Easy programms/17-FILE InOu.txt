@@ -1,0 +1,13 @@
+# FILE INPUT AND OUTPUT 
+# "r" : Open File for Reading----------->Default Mode
+# "w" : Open File For writing
+# "x" : Creates file if not exists
+# "a" : Add more content to file 
+# "t" : text mode----------->Default Mode
+# "b" : binary mode
+# "+" : read and write
+
+
+f=open("test.txt","rt")
+print(f.readline())
+print(f.readline())

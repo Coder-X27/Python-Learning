@@ -1,0 +1,9 @@
+s=set()
+s.add(1)
+s.add(15)
+s.add(12)
+s.add(14)
+print(s)
+s.remove(12)
+s1={4,6}
+print(s)

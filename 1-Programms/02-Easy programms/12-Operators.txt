@@ -1,0 +1,57 @@
+#1  Arithmatic operator
+print("Arithmatic operators")
+print("10 + 5 is ",10+5)#Addition Operator
+print("10 - 5 is ",10-5)#Subtraction Operator
+print("10 * 5 is ",10*5)#Multiplication Operator
+print("10 ** 5 is ",10**5)#Power Operator
+print("10 / 5 is ",10/5)#Divide Operator
+print("10 // 5 is ",10//5)#Floar Operator----->It gives Only quotient It does not divide the value Fully
+
+
+#2 Asignment OPerator
+
+print("Assignment OPerators")
+aso=45
+print(aso)
+aso*=5
+print(aso)
+aso-=5
+print(aso)
+aso+=5
+print(aso)
+aso/=5
+print(aso)
+aso%=5
+print(aso)
+
+#3 Comparison Operators
+
+c=5
+print(c==5)
+print(c!=5)
+print(c<5)
+print(c>5)
+print(c>=5)
+print(c<=5)
+
+#4 Logical Operators
+
+a=True
+b=False
+print(a and b)#And operator returns true/false only when both are true/false 
+print(a or b)#or operator returns true/false when any one them or both of them are true/false
+
+#5 Identical Operators
+
+a=45
+b=4
+print(a is b)#If it is Actually Right then it will return TRUE
+print(a is not b)
+
+#6 Membership Operator
+
+list=[3,4,5,6,8,7,4,5,2,3]
+
+print(35 in list)#----->If anything is in the list then it will return True
+print(35 not in list)#->If anything is not in the list then it will rturn False
+

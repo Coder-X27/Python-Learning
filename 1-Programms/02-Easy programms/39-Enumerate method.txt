@@ -1,0 +1,12 @@
+l1 = ["Bhindi", "Aaloo", "Chopsticks", "Chowmein"]
+
+# Normal method to print items
+i = 1
+for items in l1:
+    if i % 2 != 0:
+        print(f"Jarvis plz buy {items}")
+    i += 1
+# Enumerate method to print items
+for index,item in enumerate(l1):
+    if  index%2==0:
+        print(f"Jarvis please buy {item}")

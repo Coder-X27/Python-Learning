@@ -1,0 +1,35 @@
+class Employee:
+    leaves = 8
+
+    def __init__(self, aname, asalary, arole):
+        self.name = aname
+        self.salary = asalary
+        self.role = arole
+
+    def printdetails(self):
+        return f"The name is {self.name}. Salary is {self.salary} and role is {self.role}"
+
+    @classmethod
+    def change_leaves(cls, newleaves):
+        cls.no_of_leaves = newleaves
+
+    def __add__(self, other):  # ----->This is known as dunder adding method
+        # It helps us doing operator overloading
+        return self.salary + other.salary
+
+    def __truediv__(self, other):  # ----->This is known as dunder Division method
+        # It helps us doing operator overloading
+        return self.salary / other.salary
+
+    def __repr__(self):
+        return f"Employee ('{self.name}',{self.salary},'{self.role}')"
+
+    def __str__(self):
+        return f"The name is {self.name}. Salary is {self.salary} and role is {self.role}"
+        
+        
+emp1 = Employee("Karan", 4500, "Programmer")
+
+print(str(emp1))# If we have to get a str then we have tp TypeCast it 
+print(repr(emp1))# If we have to get a repr then we have tp TypeCast it .
+#Otherwize str will automatically print by the system 

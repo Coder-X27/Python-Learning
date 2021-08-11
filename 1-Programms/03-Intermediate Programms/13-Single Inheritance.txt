@@ -1,0 +1,46 @@
+class Employee:
+    leaves = 8
+
+    def __init__(self, aname, asalary, arole):
+        self.name = aname
+        self.salary = asalary
+        self.role = arole
+
+    def printdetails(self):
+        return f"The name is {self.name}. Salary is {self.salary} and role is {self.role}"
+
+    @classmethod
+    def change_leaves(cls, newleaves):
+        cls.no_of_leaves = newleaves
+
+    @classmethod
+    def from_str(cls, string):
+        params = string.split("-")
+        return cls(*string.split("-"))
+
+    @staticmethod
+    def printgood(string):
+        print("This is good " + string)
+
+
+class Programmer(Employee):
+    no_of_holidays=56
+    def __init__(self, aname, asalary, arole,language):
+        self.name = aname
+        self.salary = asalary
+        self.role = arole
+        self.language = language
+
+    def printprog(self):
+        return f"The name is {self.name}. Salary is {self.salary} and role is {self.role} and programmer is {self.language}"
+
+
+Karan= Employee("Karan", 450, "youtube")
+kartik=Employee("Kartik", 450, "BuissnessMan")
+
+yash=Programmer("Yash",757,"Chapne ka",["Python","cpp","C","Java"])
+neel=Programmer("neel",889,"Gussa hone ka",["Python"])
+
+print(yash.printprog())
+print(neel.printprog())
+print(neel.no_of_holidays)

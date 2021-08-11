@@ -1,0 +1,21 @@
+class Employee:
+    no_of_leaves=8
+    pass
+
+karan=Employee()
+kartik=Employee()
+
+karan.name="Karan"
+karan.salary=50000
+karan.role="Coder"
+
+kartik.name="Kartik"
+kartik.salary=100000
+kartik.role="Buissness Man"
+
+print(Employee.no_of_leaves)
+print(kartik.__dict__)
+print(karan.__dict__)
+kartik.no_of_leaves=9
+print(kartik.__dict__)
+print(Employee.no_of_leaves)

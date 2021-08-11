@@ -1,0 +1,8 @@
+def factorial_iterative(n):
+    fac=1
+    for i in range(n):
+        fac=fac * (i+1)
+    return fac
+
+number=int(input("Enter the number\n"))
+print("Factorial using iterative method",factorial_iterative(number))
